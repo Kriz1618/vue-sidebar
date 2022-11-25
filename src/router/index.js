@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Counters from "@/views/Counters.vue";
+import TestView from "@/views/TestView.vue";
+import ImagesView from "@/views/ImagesView.vue";
 
 const routes = [
   {
@@ -13,6 +16,21 @@ const routes = [
     component: () => import('../views/Dashboard.vue')
   },
   {
+    path: '/counters',
+    name: 'Counters',
+    component: Counters,
+  },
+  {
+    path: '/testview',
+    name: 'TestComponent',
+    component: TestView,
+  },
+  {
+    path: '/images',
+    name: 'Images',
+    component: ImagesView,
+  },
+  {
     path: "/about",
     name: "about",
     // route level code-splitting
@@ -20,6 +38,24 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
+  {
+    path: "/characters",
+    name: "Characters",
+    component: () =>
+      import("../components/characters/Characters.vue"),
+  },
+  {
+    path: "/directives",
+    name: "Directives",
+    component: () =>
+      import("../components/testcomponent/Directives.vue"),
+  },
+  {
+    path: "/forms",
+    name: "Forms",
+    component: () =>
+      import("../components/testcomponent/form/Form.vue"),
   },
 ];
 
