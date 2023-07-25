@@ -57,6 +57,18 @@ const routes = [
     component: () =>
       import("../components/testcomponent/form/Form.vue"),
   },
+  {
+    path: "/privacypolicy",
+    name: "PrivacyPolicy",
+    component: () =>
+      import("../views/PrivacyPolicy.vue"),
+  },
+  {
+    path: "/termsofservice",
+    name: "TermsOfService",
+    component: () =>
+      import("../views/TermsOfService.vue"),
+  },
 ];
 
 const router = createRouter({

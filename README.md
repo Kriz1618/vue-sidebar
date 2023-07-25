@@ -25,7 +25,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Deploy to Github
 
-* Create a config file with the publiPatch key
+* Create a config file with the publicPatch key
 ```
 touch vue.config.js
 publicPath: process.env.NODE_ENV === 'production'

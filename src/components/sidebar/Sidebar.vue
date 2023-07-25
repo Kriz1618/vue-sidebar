@@ -28,6 +28,8 @@ export default {
     <SidebarLink to="/images" icon="fas fa-image">Images</SidebarLink>
     <SidebarLink to="/directives" icon="fas fa-atom" style='color:azure'>Directives</SidebarLink>
     <SidebarLink to="/forms" icon="fas fa-address-card" style='color:azure'>Forms</SidebarLink>
+    <SidebarLink to="/privacypolicy" icon="fas fa-wrench" style='color:azure'>Privacy Policy</SidebarLink>
+    <SidebarLink to="/termsofservice" icon="fab fa-usps" style='color:azure'>Service Terms</SidebarLink>
 
     <span
       class="collapse-icon"
